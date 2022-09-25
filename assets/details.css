@@ -84,6 +84,17 @@ input[type="radio"] {
 	accent-color: black;
 }
 
+.confirm-block {
+  padding: 3vh 5vw;
+  text-align: center;
+  /* background-image: url("parchment.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #dae6ca; */
+  background-color: #BFD3BE;
+}
+
 @media only screen and (max-width: 991px) {
 
   .invite, .rsvp {
