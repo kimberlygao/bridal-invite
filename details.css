@@ -1,0 +1,104 @@
+html,body {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("background1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+h2 {
+  font-family: 'Birthstone Bounce', cursive;
+  font-size: 50px;
+  margin: 3vh 0px;
+  line-height: 1;
+}
+
+h3 {
+  font-family: 'Birthstone Bounce', cursive;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+}
+
+
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  margin: 5px;
+}
+
+
+
+.invite {
+  text-align: center;
+  /* background-image: url("parchment.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #dae6ca; */
+  padding: 3vh 3vw;
+}
+
+.invite-block {
+  margin: 3vh 0px;
+}
+
+/* .invite-block div {
+  padding: 0px;
+} */
+
+.big-date {
+  font-size: 2.2em;
+}
+
+
+
+.two-lines {
+  border-top: 2px solid #97a97c;
+  border-bottom: 2px solid #97a97c;
+  padding: 0.3em 0;
+}
+
+
+.rsvp {
+  background-color: #dae6ca;
+  padding: 3vh 3vw;
+}
+
+input[type="radio"] {
+	accent-color: green;
+}
+
+
+.bottom {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 991px) {
+
+  .invite, .rsvp {
+    height: 100vh;
+    margin: auto;
+    padding: auto;
+    align-items: center;
+  }
+  
+  }

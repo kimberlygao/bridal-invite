@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <title>Details and RSVP</title>
+  <meta name="description" content="event details and rsvp form">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="details.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce&family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container my-auto mx-auto">
+    <div class="row d-flex">
+      <div class="col-lg-6 col-sm-12 invite align-self-center">
+        <div class="invite-block">
+          <h4>PLEASE JOIN US FOR A</h4>
+          <h2>Bridal Shower</h2>
+          <h4>HONORING</h4>
+          <h2>Lisa Gao</h2>
+        </div>
+        <div class="row invite-block d-flex">
+          <div class="col-4 align-self-center">
+            <p class="two-lines"><span>SATURDAY</span></p>
+          </div>
+          <div class="col-4" class="invite-block">
+            <p>NOVEMBER</p>
+            <p class="big-date">26</p>
+            <p>2022</p>
+          </div>
+          <div class="col-4 align-self-center">
+            <p class="two-lines"><span>11:30 AM - 1:30 PM</span></p>
+          </div>
+        </div>
+        <div class="invite-block">
+          <h5>Tiny Boxwood's</h5>
+          <p class="two-lines"><span class="">THE IVY ROOM</span></p>
+          <p>3636 RICE BOULEVARD WEST UNIVERSITY PLACE</p>
+          <p>HOUSTON, TX 77005</p>
+        </div>
+        
+      </div>
+      <div class="col-lg-6 col-sm-12 rsvp mx-auto">
+        <h3 class="text-center">RSVP</h3>
+        <br>
+        <form>
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" />
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+          <p>Will you be attending?</p>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input input-green" id="radio1" name="optradio" value="option1" checked>
+            <label class="form-check-label" for="radio1">Yes!</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input input-green" id="radio2" name="optradio" value="option2">
+            <label class="form-check-label" for="radio2">No :(</label>
+          </div>
+          <div class="text-center">
+            <input class="btn btn-light" type="submit" value="Submit">
+          </div>
+        </form>
+        <p class="bottom">Questions? reach out to Kimberly Gao (832-677-2733)</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -3,7 +3,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e9f5db;
+  background-image: url("background1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
 }
 
 input#flap {
@@ -34,10 +42,10 @@ input#flap {
 .card {
   position: absolute;
   width:280px;
-  height: 220px;
+  height: 210px;
   background-color: white;
   top:10px;
-  left:20px;
+  left:12px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,18 +53,26 @@ input#flap {
   transition: .3s;
   z-index:1;
   cursor: pointer;
+  padding: 8px;
+  background-color: #e2efdf;
 }
 
-p {
+.text-more {
+  font-family: 'Birthstone Bounce', cursive;
+  font-size: 30px;
   margin: 8px 0px;
-  font-size: 16px;
+}
+
+.text-less {
+  font-family: 'Montserrat', sans-serif;
+  margin: 5px 0px;
 }
 
 .card-front {
   position: absolute;
   width:0;
   height:0;
-  border-bottom: 120px solid #87986a;
+  border-bottom: 120px solid #9FB69D;
   border-left: 160px solid transparent;
   border-right: 160px solid transparent;
   top:120px;
@@ -75,14 +91,14 @@ p {
 
 .card-front:before {
   border-left: 161px solid transparent;
-  border-right: 161px solid #97a97c;
+  border-right: 161px solid #B6CBB5;
   top:-120px;
   left:-162px;
 }
 
 .card-front:after {
   border-right: 161px solid transparent;
-  border-left: 161px solid #97a97c;
+  border-left: 161px solid #B6CBB5;
   top:-120px;
   left:-160px;
 }
@@ -91,7 +107,7 @@ p {
   position: absolute;
   width:0;
   height:0;
-  border-top: 140px solid #b5c99a;
+  border-top: 145px solid #BFD3BE;
   border-left: 160px solid transparent;
   border-right: 160px solid transparent;
   top:0;
@@ -100,6 +116,11 @@ p {
   transition: .4s;
   transform-origin: top;
   z-index:4;
+}
+
+.caption {
+  margin: 80px;
+  text-align: center;
 }
 
 #flap:checked + .flap {
@@ -113,4 +134,8 @@ p {
 #flap:checked ~ .card {
   z-index:4;
   transform: translateY(-100px);
+}
+
+.details-link {
+  color: black;
 }
