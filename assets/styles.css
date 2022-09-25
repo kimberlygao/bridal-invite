@@ -72,7 +72,7 @@ input#flap {
   position: absolute;
   width:0;
   height:0;
-  border-bottom: 120px solid #9FB69D;
+  border-bottom: 120px solid #AEC6AD;
   border-left: 160px solid transparent;
   border-right: 160px solid transparent;
   top:120px;
@@ -138,4 +138,14 @@ input#flap {
 
 .details-link {
   color: black;
+}
+
+.confirm-block {
+  text-align: center;
+  /* background-image: url("parchment.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #dae6ca; */
+  background-color: #BFD3BE;
 }
